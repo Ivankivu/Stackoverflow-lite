@@ -1,7 +1,17 @@
-.header {
+header {
     display: flex;
     flex-direction: row;
     
+}
+header > h2{
+    margin-left:60px;
+}
+header > form{
+    margin-top:10px;
+    
+}
+header > .top-buttons{
+    justify-content: flex-end;
 }
 .container{
     display: flex;
@@ -10,7 +20,24 @@
 
 }
 
+.form{
+    margin-left:700px;
+    
+}
+.form > h1 {
+    text-align: center;
+    margin-left:18px;
+}
+
 input{
     padding: 10px;
     border-radius: 5px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+}
+footer > h5 {
+    margin-left:60px;
 }
