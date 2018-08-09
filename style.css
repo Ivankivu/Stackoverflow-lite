@@ -1,37 +1,69 @@
 header {
     display: flex;
     flex-direction: row;
+    background-color:rgb(82, 90, 102);
     
 }
 header > h2{
     margin-left:60px;
 }
 header > form{
-    margin-top:10px;
-    
+    display:flex;
+    margin-top:14px;
+    margin-left:20px;
+    height:40px;
 }
 header > .top-buttons{
-    justify-content: flex-end;
+    display: inline-flex;
+    flex:1;
+    
 }
+
 .container{
     display: flex;
     flex-direction: row;
     justify-content: center;
-
+    height:500px;
+    background-image: url(../img/1.png);
+}
+.container2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.container > .text{
+    padding:0 15px 20px 15px;
+    height:150px;
+    margin-top:40px;
+    border-radius:10px;
+    background-color:rgba(88, 16, 183, 0.3)
+}
+.text > h2{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
 }
 
 .form{
-    margin-left:700px;
+    margin:40px 0 0 200px;
+    border-radius:10px;
+    width:380px;
+    height:400px;
+    background-color:rgb(88,16,183);
+    padding:0 0 0 15px;
     
 }
 .form > h1 {
     text-align: center;
     margin-left:18px;
 }
+.form > form{
+    margin:50px 0 0 0;
+}
 
 input{
     padding: 10px;
     border-radius: 5px;
+    width:200px;
 }
 
 footer {
@@ -40,4 +72,14 @@ footer {
 }
 footer > h5 {
     margin-left:60px;
+}
+
+button{
+     background-color: #4CAF50;
+     border: none;
+     border-radius: 5px;
+     color: white;
+     text-decoration: none;
+     margin: 4px 2px;
+     cursor: pointer;
 }
