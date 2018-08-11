@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Stack Overflow- A place where people with</title>
     <link rel="stylesheet" href="css/login.css" />
+    
 </head>
 
 <body>
@@ -15,11 +15,9 @@
         <form>
             <input type="search" placeholder="Search...">
         </form>
-        <div class="top-buttons"></div>
-<button style="margin-top:12px;background-color:blue;margin-left:130px;width:91px;height:40px;" onclick="window.location.href='index.html'">Sign up</button>
-
-        <button style="
- margin-right:30px;margin-top:12px;background-color:green;margin-left:3px;width:91px;height:40px;" onclick="window.location.href='login.html'">Login</button>
+        <div class="top-spacer"></div>
+        <button id="btn1">Sign up</button>
+        <button id ="btn2" onclick="window.location.href='login.html'">Login</button>
 
     </header>
     <!--header content-->
@@ -27,24 +25,23 @@
     <!--main content-->
     <div class="container">
         <div class="text">
-            <img src="img/2.jpg" alt="" height="350" width="600" />
-
+            <img src="img/2.jpg" alt=""  />
         </div>
         <div class="form">
             <h1>Join</h1>
-            <form>
-                <div style="margin-bottom:10px;">
+            <form id="login" method="post">
+                <div>
                     <label>Email: </label>
-                    <input type="email" placeholder="e.g. you@example.com" style="margin-left:60px;">
+                    <input id="email-field" name="user_email" type="email" placeholder="e.g. you@example.com">
                 </div>
 
-                <div style="margin-bottom:10px;">
+                <div>
                     <label>Password: </label>
-                    <input type="password" placeholder="e.g. ********" style="margin-left:32px;">
+                    <input id="password-field" type="password" name="password" placeholder="e.g. ********">
                 </div>
 
-                <div style="margin-bottom:10px;">
-                    <button style="background-color:blue;margin-left:110px;width:91px;height:40px;">Sign up</button>
+                <div>
+                    <button id="btn" value="submit">Sign up</button>
 
                 </div>
                 <div>
@@ -54,12 +51,11 @@
                 </div>
             </form>
         </div>
-
     </div>
     <!--main content-->
 
     <!--main content-->
-    <div class="container2" style="background-color:rgb(138, 255, 127);">
+    <div class="container2">
         <div class="text">
             <h2>stack</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod tempora
@@ -72,13 +68,12 @@
     </div>
     <!--main content-->
 
-
-
     <!--footer content-->
-    <footer style="background-color:rgb(127, 136, 255);">
+    <footer>
         <h5>Stack overflow-lite</h5>
     </footer>
     <!--footer content-->
+<script src="script.js"></script>
 </body>
 
 </html>

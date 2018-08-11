@@ -15,7 +15,7 @@ header>form {
     height: 40px;
 }
 
-header>.top-buttons {
+header>.top-spacer {
     display: inline-flex;
     flex: 1;
 }
@@ -38,12 +38,14 @@ header>.top-buttons {
 .container>.text {
     padding: 0 15px 20px 15px;
     margin: 45px 0px 0 0px;
-    
-    
 }
 
+.container > .text > img{
+    height:350px;
+    width:600px;
+}
 
-.form {
+.container > .form{
     margin: 80px 0 0 200px;
     border-radius: 10px;
     width: 380px;
@@ -52,15 +54,15 @@ header>.top-buttons {
     padding: 0 0 0 25px;
 }
 
-.form>h1 {
+.container > .form > h1{
     text-align: center;
     margin-left: 18px;
 }
 
-.form>form {
+.container > .form > form {
     margin: 50px 0 0 0;
 }
-.form > form > div > h6 > a{
+.container > .form > form > div > h6 > a{
     color:#fff;
     margin:0 50px 0 0;
     margin-top:-70px;
@@ -68,15 +70,35 @@ header>.top-buttons {
     text-decoration-line: none;
 }
 
-input {
+.container > .form > form > div > input {
     padding: 10px;
     border-radius: 5px;
     width: 200px;
 }
 
+.container>.form>form>div {
+    margin-bottom: 10px;
+}
+.container > .form > form > div > #email-field{
+    margin-left:60px;
+}
+.container>.form>form>div>#password-field {
+    margin-left: 32px;
+}
+.container>.form>form>div>#btn {
+    background-color:blue;
+    margin-left:110px;
+    width:91px;
+    height:40px;
+}
+
+.container2{
+  background-color:rgb(138, 255, 127);
+}
 footer {
     display: flex;
     flex-direction: row;
+    background-color:rgb(127, 136, 255);
 }
 
 footer>h5 {
@@ -91,4 +113,19 @@ button {
     text-decoration: none;
     margin: 4px 2px;
     cursor: pointer;
+}
+header > button{
+    margin-top:12px;
+    width:91px;
+    height:40px;
+}
+header > #btn1{
+    background-color:blue;
+    margin-left:130px;
+}
+
+header > #btn2{
+    margin-right:30px;
+    background-color:green;
+    margin-left:3px;
 }
