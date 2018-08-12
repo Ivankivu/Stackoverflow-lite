@@ -1,0 +1,85 @@
+.vertical-menu {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    max-width: 20%;
+    background-color: #4CAF50;
+}
+
+.vertical-menu>h2 {
+    display: flex;
+    justify-content: center;
+}
+.vertical-menu >form {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.vertical-menu a {
+    background-color: #eee;
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.vertical-menu a:hover {
+    background-color: #ccc;
+}
+
+.vertical-menu a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex: 1;
+    max-width: 100%;
+    height: 500px;
+    background-image: url(../img/2.jpg);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    width: 80%;
+    height: 500px;
+    background-image: url(../img/1.png);
+}
+
+input {
+    padding: 10px;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+}
+
+footer>h5 {
+    margin-left: 60px;
+}
+
+button {
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
