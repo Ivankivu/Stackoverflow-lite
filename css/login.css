@@ -1,0 +1,131 @@
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(82, 90, 102);
+}
+
+header>h2 {
+    margin-left: 60px;
+}
+
+header>form {
+    display: flex;
+    margin-top: 14px;
+    margin-left: 20px;
+    height: 40px;
+}
+
+header>.top-spacer {
+    display: inline-flex;
+    flex: 1;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 500px;
+    /**background-image: url(../img/1.png);**/
+    background-color: rgb(255, 255, 255);
+}
+
+.container2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.container>.text {
+    padding: 0 15px 20px 15px;
+    margin: 45px 0px 0 0px;
+}
+
+.container > .text > img{
+    height:350px;
+    width:600px;
+}
+
+.container > .form{
+    margin: 80px 0 0 200px;
+    border-radius: 10px;
+    width: 380px;
+    height: 330px;
+    background-color: rgba(88, 16, 183,0.6);
+    padding: 0 0 0 25px;
+}
+
+.container > .form > h1{
+    text-align: center;
+    margin-left: 18px;
+}
+
+.container > .form > form {
+    margin: 50px 0 0 0;
+}
+.container > .form > form > div > h6 > a{
+    color:#fff;
+    margin:0 50px 0 0;
+    margin-top:-70px;
+    float:right;
+    text-decoration-line: none;
+}
+
+.container > .form > form > div > input {
+    padding: 10px;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.container>.form>form>div {
+    margin-bottom: 10px;
+}
+.container > .form > form > div > #email-field{
+    margin-left:60px;
+}
+.container>.form>form>div>#password-field {
+    margin-left: 32px;
+}
+.container>.form>form>div>#btn {
+    background-color:blue;
+    margin-left:110px;
+    width:91px;
+    height:40px;
+}
+
+.container2{
+  background-color:rgb(138, 255, 127);
+}
+footer {
+    display: flex;
+    flex-direction: row;
+    background-color:rgb(127, 136, 255);
+}
+
+footer>h5 {
+    margin-left: 60px;
+}
+
+button {
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+header > button{
+    margin-top:12px;
+    width:91px;
+    height:40px;
+}
+header > #btn1{
+    background-color:blue;
+    margin-left:130px;
+}
+
+header > #btn2{
+    margin-right:30px;
+    background-color:green;
+    margin-left:3px;
+}
