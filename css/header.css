@@ -1,0 +1,21 @@
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(82, 90, 102);
+}
+
+header>h2 {
+    margin-left: 60px;
+}
+
+header>form {
+    display: flex;
+    margin-top: 14px;
+    margin-left: 20px;
+    height: 40px;
+}
+
+header>.top-spacer {
+    display: inline-flex;
+    flex: 1;
+}
