@@ -1,84 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Stack Overflow- A place where people with</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/header.css" />
 </head>
 
 <body>
-                            <!--header content-->
-        <header>
-            <h2>Stack Overflow-lite</h2>
-            <form><input type="search" placeholder="Search here..."></form>
-            <div class="top-buttons"></div>
-<button style="margin-top:12px;background-color:blue;margin-left:130px;width:91px;height:40px;">Sign up</button>
-<button style="
- margin-right:30px;margin-top:12px;background-color:green;margin-left:3px;width:91px;height:40px;" onclick="window.location.href='login.html'">Login</button>
-           
-        </header> <!--header content-->
-        
-        <!--main content-->
-    <div class="container" style="background-color:aquamarine;">
-        <div class="text">
-            <h2>stack</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Quod tempora<br> nemo ratione amet mollitia nisi. Cumque asperiores
-            incidunt earum nisi<br> hic deserunt maiores sed quidem rerum quod, 
-            molestiae provident quas.</p>
-       
-            </div>
-        <div class="form">
-            <h1>Join</h1>
-            <form>
-                <div style="margin-bottom:10px;">
-                    <label>Display name: </label>
-                    <input type="text" placeholder="e.g. John Doe" style="margin-left:24px;">
-                </div>
+    <!--header content-->
+    <header>
+        <h2>Stack Overflow-lite</h2>
+        <form>
+            <input type="search" placeholder="Search here...">
+        </form>
+        <div class="top-buttons"></div>
+        <button class="btn1">Sign up</button>
+        <button class="btn2" onclick="window.location.href='login.html'">Login</button>
 
-                <div style="margin-bottom:10px;">
-                    <label>Email: </label>
-                    <input type="email" placeholder="e.g. you@example.com" style="margin-left:80px;">
-                </div>
-
-                <div style="margin-bottom:10px;">
-                    <label>Password: </label>
-                    <input type="password" placeholder="e.g. ********" style="margin-left:52px;">
-                </div>
-
-                <div style="margin-bottom:10px;">
-                    <button style="background-color:blue;margin-left:130px;width:91px;height:40px;">Sign up</button>
-                    
-                </div>
-            </form>
-        </div>
-
-    </div><!--main content-->
+    </header>
+    <!--header content-->
 
     <!--main content-->
-    <div class="container2" style="background-color:rgb(138, 255, 127);">
+    <div class="container">
         <div class="text">
             <h2>stack</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod tempora
                 <br> nemo ratione amet mollitia nisi. Cumque asperiores incidunt earum nisi
                 <br> hic deserunt maiores sed quidem rerum quod, molestiae provident quas.</p>
-    
+
         </div>
-        
-    
+        <div class="form">
+            <h1>Join</h1>
+            <form>
+                <div>
+                    <label>Display name: </label>
+                    <input type="text" id="name" placeholder="e.g. John Doe">
+                </div>
+
+                <div>
+                    <label>Email: </label>
+                    <input type="email" id="email" placeholder="e.g. you@example.com">
+                </div>
+
+                <div>
+                    <label>Password: </label>
+                    <input type="password" id="password" placeholder=" ********">
+                </div>
+                <div>
+                    <label>Confirm Password: </label>
+                    <input type="password" id="cpassword" placeholder="********">
+                </div>
+
+                <div>
+                    <button id="sign" onclick="window.location.href='login.html'">Sign up</button>
+
+                </div>
+            </form>
+        </div>
+
     </div>
-    <!--main content-->
-
-
-
-                    <!--footer content-->
-    <footer style="background-color:rgb(127, 136, 255);">
+    <!--footer content-->
+    <footer>
         <h5>Stack overflow-lite</h5>
-    </footer><!--footer content-->
+    </footer>
+    <!--footer content-->
 
     <script>
-
     </script>
 </body>
 

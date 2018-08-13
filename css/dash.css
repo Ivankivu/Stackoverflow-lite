@@ -1,0 +1,197 @@
+body {
+    background-color: rgb(230, 218, 218);
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    height: 655px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex: 1;
+    width: 80%;
+    height: auto;
+    background-color: #fff;
+}
+
+
+.content>form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    height: auto;
+    margin-bottom: 57px;
+}
+
+.content>form>input {
+    width: 580px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.content>form>label {
+    font-size: 23px;
+}
+
+.content>form>textarea {
+    width: 600px;
+    height: 300px;
+    margin-bottom: 10px;
+}
+.content>.blog-list{
+    display: block;
+    margin-top:60px;
+    width:100%;
+}
+.content>.blog-list>.blog-post>ul>li>.post>.votes {
+    display: inline-flex;
+    cursor: pointer;
+    width:100%;
+}
+.content>.blog-list>.blog-post>ul>li:hover {
+    background-color: antiquewhite;
+}
+
+.content>.blog-list>.blog-post>ul>li>.post>.votes>.upvote:hover {
+    color:green;
+}
+.content>.blog-list>.blog-post>ul>li>.post>.votes>.upvote {
+    padding:10px;
+}
+.content>.blog-list>.blog-post>ul>li>.post>.votes>.downvote {
+    padding: 10px;
+}
+.content>.blog-list>.blog-post>ul>li>div>.question {
+    padding: 10px;
+    text-align: left;
+    text-decoration: none;
+    font-size: 25px;
+    width: 100%;
+}
+
+
+.content>button {
+    width: 120px;
+    height: 40px;
+}
+
+.content>.posts {
+    width: 60%;
+}
+
+.content>.posts>ul>li:hover {
+    background-color: antiquewhite;
+}
+
+.content>div>ul>li>div {
+    display: inline-flex;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.content>div>ul>li>div>div {
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    width: 40px;
+}
+
+.content>div>ul>li>div>.question {
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    width: 100%;
+}
+
+.content>div>ul>li>div>div:hover {
+    color: green;
+    cursor: pointer;
+}
+
+.content>div>ul {
+    list-style-type: none;
+}
+
+.content>.posts>div>h1 {
+    text-align: left;
+    margin-left: 20px;
+}
+
+.content>.posts>div {
+    margin: 26px;
+    display: inline-flex;
+}
+
+.content>.posts>div>button {
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    margin: 10px 50px;
+    cursor: pointer;
+}
+
+.content>form>button {
+    background-color: #4CAF50;
+    border: none;
+    width: 20%;
+    height: 7%;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.content>div>.profile-form{
+    display:inline-block;
+    width:100%;
+    height:100%;
+    margin-left:40px;
+}
+.content>div> h2{
+    text-align: center;
+    font-size:30px;
+}
+
+.content>div>.profile-form>div{
+    font-size:18px;
+    padding:10px;
+
+}
+
+.content>div>.profile-form>div>input{
+    margin-top: 20px;
+    margin-left:20px;
+    font-size: 18px;
+    padding: 5px;
+    border-radius:5px;
+}
+
+
+
+footer {
+    display: flex;
+    flex-direction: row;
+    background-color:rgb(127, 136, 255);
+}
+
+footer>h5 {
+    margin-left: 60px;
+}
+
+button {
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}

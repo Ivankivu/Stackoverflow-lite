@@ -1,18 +1,14 @@
 
-
+body{
+    background-color:rgb(230, 218, 218);
+}
 .container {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    height: 500px;
+    height: 657px;
     /**background-image: url(../img/1.png);**/
-    background-color: rgb(255, 255, 255);
-}
-
-.container2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    background-color: rgb(248, 243, 243);
 }
 
 .container>.text {
@@ -72,9 +68,6 @@
     height:40px;
 }
 
-.container2{
-  background-color:rgb(138, 255, 127);
-}
 footer {
     display: flex;
     flex-direction: row;
@@ -109,3 +102,4 @@ header > #btn2{
     background-color:green;
     margin-left:3px;
 }
+
