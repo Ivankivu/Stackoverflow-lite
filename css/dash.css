@@ -16,6 +16,7 @@ body {
     width: 80%;
     height: auto;
     background-color: #fff;
+    overflow-y: scroll;
 }
 
 
@@ -28,7 +29,7 @@ body {
 }
 
 .content>form>input {
-    width: 580px;
+    width: 505px;
     border-radius: 5px;
     padding: 10px;
 }
@@ -38,9 +39,11 @@ body {
 }
 
 .content>form>textarea {
-    width: 600px;
+    width: 520px;
     height: 300px;
     margin-bottom: 10px;
+    border-radius:5px;
+    color:blue;
 }
 .content>.blog-list{
     display: block;
