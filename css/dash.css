@@ -39,9 +39,10 @@
     height: 300px;
     margin-bottom: 10px;
 }
-.content>.blog-list>.blog-post{
-    border:1px;
-    border-width: 1px;
+.content>.blog-list{
+    display: block;
+    margin-top:60px;
+    width:100%;
 }
 .content>.blog-list>.blog-post>ul>li>.post>.votes {
     display: inline-flex;
@@ -60,6 +61,13 @@
 }
 .content>.blog-list>.blog-post>ul>li>.post>.votes>.downvote {
     padding: 10px;
+}
+.content>.blog-list>.blog-post>ul>li>div>.question {
+    padding: 10px;
+    text-align: left;
+    text-decoration: none;
+    font-size: 25px;
+    width: 100%;
 }
 
 
@@ -137,6 +145,33 @@
     text-decoration: none;
     cursor: pointer;
 }
+
+.content>div>.profile-form{
+    display:inline-block;
+    width:100%;
+    height:100%;
+    margin-left:40px;
+}
+.content>div> h2{
+    text-align: center;
+    font-size:30px;
+}
+
+.content>div>.profile-form>div{
+    font-size:18px;
+    padding:10px;
+
+}
+
+.content>div>.profile-form>div>input{
+    margin-top: 20px;
+    margin-left:20px;
+    font-size: 18px;
+    padding: 5px;
+    border-radius:5px;
+}
+
+
 
 footer {
     display: flex;
