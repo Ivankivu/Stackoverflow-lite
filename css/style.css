@@ -1,85 +1,115 @@
+body {
+    background-color: rgb(230, 218, 218);
+}
 header {
     display: flex;
     flex-direction: row;
-    background-color:rgb(82, 90, 102);
-    
-}
-header > h2{
-    margin-left:60px;
-}
-header > form{
-    display:flex;
-    margin-top:14px;
-    margin-left:20px;
-    height:40px;
-}
-header > .top-buttons{
-    display: inline-flex;
-    flex:1;
-    
+    background-color: rgb(82, 90, 102);
 }
 
-.container{
+header>h2 {
+    margin-left: 60px;
+}
+
+header>form {
+    display: flex;
+    margin-top: 14px;
+    margin-left: 20px;
+    height: 40px;
+}
+
+header>.top-buttons {
+    display: inline-flex;
+    flex: 1;
+}
+
+.container {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    height:500px;
+    height: 659px;
     background-image: url(../img/1.png);
 }
-.container2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+
+.container>.text {
+    padding: 0 15px 20px 15px;
+    height: 150px;
+    margin-top: 40px;
+    border-radius: 10px;
+    background-color: rgba(88, 16, 183, 0.3)
 }
-.container > .text{
-    padding:0 15px 20px 15px;
-    height:150px;
-    margin-top:40px;
-    border-radius:10px;
-    background-color:rgba(88, 16, 183, 0.3)
-}
-.text > h2{
+
+.text>h2 {
     font-family: 'Courier New', Courier, monospace;
     font-size: 30px;
 }
 
-.form{
-    margin:40px 0 0 200px;
-    border-radius:10px;
-    width:380px;
-    height:400px;
-    background-color:rgb(88,16,183);
-    padding:0 0 0 15px;
-    
-}
-.form > h1 {
-    text-align: center;
-    margin-left:18px;
-}
-.form > form{
-    margin:50px 0 0 0;
+.form {
+    margin: 100px 0 0 200px;
+    border-radius: 10px;
+    width: 440px;
+    height: 400px;
+    background-color: rgb(88, 16, 183);
+    padding: 0 0 0 15px;
 }
 
-input{
+.form>h1 {
+    text-align: center;
+    margin-left: 18px;
+}
+
+.form>form {
+    margin: 50px 0 0 0;
+}
+
+.form>form>div>#sign {
+    background-color: rgb(31, 70, 226);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    margin: 4px 150px;
+    cursor: pointer;
+}
+
+#name {
+    margin-left: 44px;
+}
+
+#email {
+    margin-left: 100px;
+}
+
+#password {
+    margin-left: 72px;
+}
+
+#cpassword {
+    margin-left: 12px;
+}
+
+input {
     padding: 10px;
     border-radius: 5px;
-    width:200px;
+    width: 200px;
 }
 
 footer {
     display: flex;
     flex-direction: row;
-}
-footer > h5 {
-    margin-left:60px;
+    background-color:rgb(127, 136, 255);
 }
 
-button{
-     background-color: #4CAF50;
-     border: none;
-     border-radius: 5px;
-     color: white;
-     text-decoration: none;
-     margin: 4px 2px;
-     cursor: pointer;
+footer>h5 {
+    margin-left: 60px;
+}
+
+header>button {
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
 }

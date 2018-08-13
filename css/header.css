@@ -1,7 +1,7 @@
 header {
     display: flex;
     flex-direction: row;
-    background-color: rgb(82, 90, 102);
+    background-color: rgb(146, 108, 208);
 }
 
 header>h2 {
@@ -13,6 +13,10 @@ header>form {
     margin-top: 14px;
     margin-left: 20px;
     height: 40px;
+}
+
+header>form>input{
+border-radius:5px;
 }
 
 header>.top-spacer {
@@ -98,4 +102,32 @@ header>.dropdown:hover>.dropdown-content {
 .vertical-menu a.active {
     background-color: #4CAF50;
     color: white;
+}
+
+header>.btn1{
+    margin-top:12px;
+    background-color:blue;
+    margin-left:130px;
+    width:91px;
+    height:40px;
+}
+
+header>.btn2{
+    margin-right:30px;
+    margin-top:12px;
+    background-color:green;
+    margin-left:3px;
+    width:91px;
+    height:40px;
+}
+
+.form>form>div{
+    margin-bottom:10px;
+}
+
+.form>form>div>button{
+    background-color:blue;
+    margin-left:130px;
+    width:91px;
+    height:40px;
 }

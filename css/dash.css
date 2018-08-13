@@ -1,3 +1,6 @@
+body {
+    background-color: rgb(230, 218, 218);
+}
 .container {
     display: flex;
     flex-direction: row;
