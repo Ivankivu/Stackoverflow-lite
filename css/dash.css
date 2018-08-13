@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: row;
     max-width: 100%;
-    height: 100%;
+    height: 655px;
 }
 
 .content {
@@ -14,6 +14,7 @@
     height: auto;
     background-color: #fff;
 }
+
 
 .content>form {
     display: flex;
@@ -38,6 +39,29 @@
     height: 300px;
     margin-bottom: 10px;
 }
+.content>.blog-list>.blog-post{
+    border:1px;
+    border-width: 1px;
+}
+.content>.blog-list>.blog-post>ul>li>.post>.votes {
+    display: inline-flex;
+    cursor: pointer;
+    width:100%;
+}
+.content>.blog-list>.blog-post>ul>li:hover {
+    background-color: antiquewhite;
+}
+
+.content>.blog-list>.blog-post>ul>li>.post>.votes>.upvote:hover {
+    color:green;
+}
+.content>.blog-list>.blog-post>ul>li>.post>.votes>.upvote {
+    padding:10px;
+}
+.content>.blog-list>.blog-post>ul>li>.post>.votes>.downvote {
+    padding: 10px;
+}
+
 
 .content>button {
     width: 120px;
@@ -117,6 +141,7 @@
 footer {
     display: flex;
     flex-direction: row;
+    background-color:rgb(127, 136, 255);
 }
 
 footer>h5 {

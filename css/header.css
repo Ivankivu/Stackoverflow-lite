@@ -63,7 +63,7 @@ header>.dropdown:hover>.dropdown-content {
     flex-direction: column;
     flex: 1;
     max-width: 20%;
-    background-color: #4CAF50;
+    background-color: #eee;
 }
 
 .vertical-menu>h2 {

@@ -33,31 +33,55 @@
             <form>
                 <input type="search" placeholder="Search...">
             </form>
-            <a href="dashboard.html" class="active">General posts</a>
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-            <a href="#">Link 4</a>
+            <a href="dashboard.html">General posts</a>
+<a href="question.html" class="active">My posts</a>
+<a href="my-posts.html">Manage</a>
+<a href="profile.html">Profile</a>
         </aside>
 
-        <section id="sec" class="content">
-
+        <section class="content">
             <form>
-<h1>Questions Asked</h1>
-
-                <label>Title</label>
+                <h1>Questions Asked</h1>
                 <br>
+                <br>
+                <label>Title</label>
                 <br>
                 <input type="text" placeholder="what's your question? Be specific.">
                 <br>
-                <br>
                 <label>Body</label>
                 <br>
-                <br>
                 <textarea></textarea>
-<button onclick="window.location.href='question.html';">Post Question</button>
+                <button onclick="window.location.href='question.html';">Post Question</button>
             </form>
 
+            <div class="blog-list">
+                <div class="blog-post">
+                    <ul>
+                        <li>
+                            <div onclick="window.location.href='#'" class="post">
+                                <div class="question">
+                                    <span>What is science?</span>
+                                </div>
+                                <div class="votes">
+                                    <div class="upvote">
+                                        <span>
+                                            <img src="img/upvote.png" alt="">
+                                        </span>
+                                        <div>upvote</div>
+                                    </div>
+                                    <div class="downvote">
+                                        <span>
+                                            <img src="img/downvote.png" alt="">
+                                        </span>
+                                        <div>downvote</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </section>
     </div>
     <!--main content-->
@@ -65,10 +89,16 @@
 
 
     <!--footer content-->
-    <footer style="background-color:rgb(127, 136, 255);">
+    <footer>
         <h5>Stack overflow-lite</h5>
     </footer>
     <!--footer content-->
+
+    <script>
+        $function()({
+
+        });
+    </script>
 
 </body>
 
