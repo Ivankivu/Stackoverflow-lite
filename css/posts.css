@@ -1,0 +1,317 @@
+body {
+    background-color: rgb(230, 218, 218);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    height: 655px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex: 1;
+    width: 80%;
+    height: auto;
+    background-color: #fff;
+    overflow-y: scroll;
+}
+
+
+.content>.posts>ul>li>li {
+    display: block;
+    margin-top: 60px;
+    width: 100%;
+}
+
+.content>.posts>ul>li>ul>li.post>.votes {
+    display: inline-block;
+    cursor: pointer;
+    width: 80%;
+}
+
+.content>.blog-list>.blog-post>ul>li:hover {
+    background-color: antiquewhite;
+}
+.posts>.votes a{
+     float: left;
+     color: #f2f2f2;
+     text-align: center;
+     padding: 14px 16px;
+     text-decoration: none;
+     font-size: 17px;
+}
+
+
+.content>button {
+    width: 120px;
+    height: 40px;
+}
+
+.content>.posts {
+    width: 100%;
+    margin-left:20px;
+}
+
+.content>.posts>ul>li:hover {
+    background-color: antiquewhite;
+}
+
+.content>div>ul>li>div {
+    display: inline-flex;
+    padding: 10px;
+    text-decoration: none;
+    
+}
+
+.content>div>ul>li>div>div {
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    width: 40px;
+}
+
+.content>div>ul>li>div>.question {
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    width: 100%;
+}
+
+.content>div>ul>li>div>div:hover {
+    color: green;
+    cursor: pointer;
+}
+
+.content>div>ul {
+    list-style-type: none;
+}
+
+.content>.posts>div>h1 {
+    text-align: left;
+    margin-left: 20px;
+}
+
+.content>.posts>div {
+    margin: 26px;
+    display: inline-flex;
+}
+
+.content>.posts>div>button {
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    margin: 10px 50px;
+    cursor: pointer;
+}
+
+.content>form>button {
+    background-color: #4CAF50;
+    border: none;
+    width: 20%;
+    height: 7%;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.content>div>.profile-form {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    margin-left: 40px;
+}
+
+.content>div>h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.content>div>.profile-form>div {
+    font-size: 18px;
+    padding: 10px;
+}
+
+.content>div>.profile-form>div>input {
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(127, 136, 255);
+}
+
+footer>h5 {
+    margin-left: 60px;
+}
+
+button {
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+
+
+/* Layout styles */
+
+.button {
+    font-size: 1em;
+    width:100px;
+    padding: 10px;
+    color: #fff;
+    border: 2px solid #06D85F;
+    border-radius: 20px/50px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.button:hover {
+    background: #06D85F;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 50%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+    margin-top: 40px;
+    margin-left:20px;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+#form {
+    margin-left: 20px;
+    margin-bottom: 157px;
+    height: 500px;
+    width:100%;
+}
+
+#form>label {
+    font-size: 23px;
+    padding-bottom:20px;
+}
+#form>textarea {
+    width: 600px;
+    height: 200px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: blue;
+}
+
+
+#form>a{
+    margin-bottom:30px;
+     font-size: 1em;
+     width:100px;
+     padding: 10px;
+     color: #fff;
+     background-color: #06D85F;
+     border: 2px solid #06D85F;
+     border-radius: 20px/50px;
+     text-decoration: none;
+     cursor: pointer;
+     transition: all 0.3s ease-out;
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.popup .close:hover {
+    color: #06D85F;
+}
+
+.popup .box {
+    max-height: 30%;
+}
+
+
+/* Style the button that is used to open and close the collapsible content */
+
+.collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 150px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
+.active,
+.collapsible:hover {
+    background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+
+.contents {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    height:auto;
+    background-color: #f1f1f1;
+}
+
+.answers{
+    list-style-type:none;
+}
+
+.answers a{
+    text-decoration:none;
+}
