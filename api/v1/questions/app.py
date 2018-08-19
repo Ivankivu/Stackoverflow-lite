@@ -1,3 +1,4 @@
+
 from flask import Flask, jsonify
 from flask_restful import Api, Resource, reqparse
 
@@ -72,7 +73,7 @@ class Question(Resource):
             questions.append(question)
             return question, 201
 
-        def put(self, method=["((zzzzzPUT"]):
+        def put(self, method=["PUT"]):
             parser = reqparse.RequestParser()
             parser.add_argument("question_title")
             parser.add_argument("question_id")
@@ -92,7 +93,7 @@ class Question(Resource):
                 "question_id": args["question_id"],
                 "occupation": args["occupation"]
             }
-            question["answer"].append(question)
+            questions.append(question)
             return question, 201
 
         def delete(self, method=["DELETE"]):
