@@ -1,27 +1,7 @@
 body {
     background-color: rgb(230, 218, 218);
 }
-header {
-    display: flex;
-    flex-direction: row;
-    background-color: rgb(82, 90, 102);
-}
 
-header>h2 {
-    margin-left: 60px;
-}
-
-header>form {
-    display: flex;
-    margin-top: 14px;
-    margin-left: 20px;
-    height: 40px;
-}
-
-header>.top-buttons {
-    display: inline-flex;
-    flex: 1;
-}
 
 .container {
     display: flex;
@@ -62,16 +42,6 @@ header>.top-buttons {
     margin: 50px 0 0 0;
 }
 
-.form>form>div>#sign {
-    background-color: rgb(31, 70, 226);
-    border: none;
-    border-radius: 5px;
-    color: white;
-    text-decoration: none;
-    margin: 4px 150px;
-    cursor: pointer;
-}
-
 #name {
     margin-left: 44px;
 }
@@ -94,6 +64,17 @@ input {
     width: 200px;
 }
 
+#sign {
+    background-color: #4CAF50;
+    width:100px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    margin: 4px 150px;
+    cursor: pointer;
+}
+
 footer {
     display: flex;
     flex-direction: row;
@@ -104,12 +85,3 @@ footer>h5 {
     margin-left: 60px;
 }
 
-header>button {
-    background-color: #4CAF50;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    text-decoration: none;
-    margin: 4px 2px;
-    cursor: pointer;
-}

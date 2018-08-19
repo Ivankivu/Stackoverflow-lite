@@ -18,8 +18,8 @@
             <input type="search" placeholder="Search...">
         </form>
         <div class="top-spacer"></div>
-        <button id="btn1" onclick="window.location.href='index.html'">Sign up</button>
-        <button id="btn2" onclick="window.location.href='dashboard.html'">Login</button>
+        <button class="btn1" onclick="window.location.href='index.html'">Sign up</button>
+        <button class="btn2" onclick="window.location.href='dashboard.html'">Login</button>
 
     </header>
     <!--header content-->
@@ -31,7 +31,7 @@
         </div>
         <div class="form">
             <h1>Join</h1>
-            <form id="login" method="post">
+            <form id="login" action="/dashboard.html" method="POST">
                 <div>
                     <label>Email: </label>
                     <input id="email-field" name="user_email" type="email" placeholder="e.g. you@example.com">
@@ -42,10 +42,9 @@
                     <input id="password-field" type="password" name="password" placeholder="e.g. ********">
                 </div>
 
-                <div>
-                    <button id="btn" value="submit" onclick="window.location.href='dashboard.html'">Login</button>
-
-                </div>
+<div>
+    <input type="submit" id="sign" value="Signup">
+</div>
                 <div>
                     <h6>
                         <a href="#">forgot?</a>

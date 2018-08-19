@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Stack Overflow- A place where people with</title>
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/posts.css" />
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <!--header content-->
+    <header>
+        <h2>Stack Overflow-lite</h2>
+        <div style="flex:20;"></div>
+        <div class="dropdown">
+            <div class="dropdown-content">
+                <a href="#" class="active">My account</a>
+                <a href="login.html">logout</a>
+            </div>
+        </div>
+    </header>
+    <!--header content-->
+
+
+
+    <div class="container">
+        <!--main content-->
+        <aside class="vertical-menu">
+            <h2>menu</h2>
+            <form>
+                <input type="search" placeholder="Search...">
+            </form>
+            <a href="dashboard.html">General posts</a>
+            <a href="question.html" class="active">My posts</a>
+            <a href="update-profile.html">Profile</a>
+        </aside>
+        <section class="content">
+            <div class="posts">
+                <div>
+                    <h1>Question solutions</h1>
+                    <button onclick="window.location.href='question.html';">Ask a Question</button>
+                </div>
+
+
+                <div id="popup1" class="overlay">
+                    <div class="popup">
+                        <h2>Add New Answer</h2>
+                        <a class="close" href="#">&times;</a>
+                        <div class="box">
+                            <form id="form">
+                                <br>
+                                <br>
+                                <label>Body</label>
+                                <br>
+                                <br>
+                                <br>
+                                <textarea></textarea>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <a href="#">Post Answer</a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+
+                <ul style="list-style: none;width:80%;">
+                    <li>
+                        <div onclick="window.location.href='#'" class="post">
+                            <div class="question">
+                                <span>What is science?</span>
+                            </div>
+                            <div class="views button">
+                                <div class="counts">
+                                    <span title="5 views">+</span>
+                                </div>
+                                <div>
+                                    <a href="#popup1">Post answer</a>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <button class="collapsible">view answers</button>
+                        <div class="contents">
+                            <ul>
+                                <li class="answers">
+                                    <p>Thanks for reading this article, hopefully by now you have an idea on how to write a
+                                        RESTful API rapidly using Flask, as well as adhere to some existing standards to
+                                        design a high quality RESTful API.</p>
+                                    <br>
+                                    <span>posted on 2nd July, 2018</span>
+                                    <span>&nbsp;&nbsp;
+                                        <a href="#">
+                                            <img alt="" src="img/upvote.png">
+                                        </a>&nbsp;&nbsp;
+                                        <a href="#">
+                                            <img alt="" src="img/downvote.png">
+                                        </a>
+                                        &nbsp; &nbsp;
+                                        <a href="#">
+                                            Accept
+                                        </a>
+                                        &nbsp;&nbsp;
+                                        <a href="#">
+                                            Reject
+                                        </a>
+                                    </span>
+                                </li>
+                                <li class="answers">
+                                    <p>implement these tags soon Firefox has implemented summary/detail tags (but currently
+                                        has it behind a flag) Webkit supports it as default since chrome 12 as does safari
+                                        on OS X and iOS Blink derived browsers - chrome mobile/desktop, opera support it
+                                        as default.</p>
+                                    <br>
+                                    <span>posted on 16th July, 2018</span>
+                                    <span>&nbsp;&nbsp;
+                                        <a href="#">
+                                            <img alt="" src="img/upvote.png">
+                                        </a>&nbsp;&nbsp;
+                                        <a href="#">
+                                            <img alt="" src="img/downvote.png">
+                                        </a>
+                                        &nbsp; &nbsp;
+                                        <a href="#">
+                                            Accept
+                                        </a>
+                                        &nbsp;&nbsp;
+                                        <a href="#">
+                                            Reject
+                                        </a>
+
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    <!--main content-->
+
+    <!--footer content-->
+    <footer>
+        <h5>Stack overflow-lite</h5>
+    </footer>
+    <!--footer content-->
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener(
+                "click",
+                function () {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.display === "block") {
+                        content.style.display = "none";
+                    } else {
+                        content.style.display = "block";
+                    }
+                });
+        }
+    </script>
+
+</body>
+
+</html>
