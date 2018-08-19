@@ -61,11 +61,16 @@ body{
 .container>.form>form>div>#password-field {
     margin-left: 32px;
 }
-.container>.form>form>div>#btn {
-    background-color:blue;
-    margin-left:110px;
-    width:91px;
-    height:40px;
+
+#sign {
+    background-color: #4CAF50;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    margin: 4px 110px;
+    cursor: pointer;
 }
 
 footer {
@@ -77,29 +82,3 @@ footer {
 footer>h5 {
     margin-left: 60px;
 }
-
-button {
-    background-color: #4CAF50;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    text-decoration: none;
-    margin: 4px 2px;
-    cursor: pointer;
-}
-header > button{
-    margin-top:12px;
-    width:91px;
-    height:40px;
-}
-header > #btn1{
-    background-color:blue;
-    margin-left:130px;
-}
-
-header > #btn2{
-    margin-right:30px;
-    background-color:green;
-    margin-left:3px;
-}
-

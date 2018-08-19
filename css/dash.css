@@ -1,6 +1,7 @@
 body {
     background-color: rgb(230, 218, 218);
 }
+
 .container {
     display: flex;
     flex-direction: row;
@@ -18,7 +19,6 @@ body {
     background-color: #fff;
     overflow-y: scroll;
 }
-
 
 .content>form {
     display: flex;
@@ -42,40 +42,70 @@ body {
     width: 520px;
     height: 300px;
     margin-bottom: 10px;
-    border-radius:5px;
-    color:blue;
+    border-radius: 5px;
+    color: blue;
 }
-.content>.blog-list{
+
+.content>.blog-list {
     display: block;
-    margin-top:60px;
-    width:100%;
+    margin-top: 60px;
+    width: 100%;
 }
+
 .content>.blog-list>.blog-post>ul>li>.post>.votes {
     display: inline-flex;
     cursor: pointer;
-    width:100%;
-}
-.content>.blog-list>.blog-post>ul>li:hover {
-    background-color: antiquewhite;
+    width: 100%;
+    font-size: 15px;
+    margin-top: -10px;
 }
 
-.content>.blog-list>.blog-post>ul>li>.post>.votes>.upvote:hover {
-    color:green;
+.content>.blog-list>.blog-post>ul>li>.post>.votes>.icon {
+    cursor: pointer;
+    width: 100%;
+    block-size: 36px;
 }
+
+.content>.blog-list>.blog-post>ul>li>.post>.votes>.icon> {
+    cursor: pointer;
+    text-align: center;
+}
+
+.content>.blog-list>.blog-post>ul>li>.post>.votes>.icon>span>img {
+    cursor: pointer;
+    width: 18px;
+    position: relative;
+}
+
+/* .content>.blog-list>.blog-post>ul>li:hover {
+    background-color:#efe;
+} */
+
+.content>.blog-list>.blog-post>ul>li>.post>.votes>.downvote:hover,
+.upvote:hover {
+    color: green;
+}
+
 .content>.blog-list>.blog-post>ul>li>.post>.votes>.upvote {
-    padding:10px;
+    padding: 10px;
 }
+
 .content>.blog-list>.blog-post>ul>li>.post>.votes>.downvote {
     padding: 10px;
 }
-.content>.blog-list>.blog-post>ul>li>div>.question {
+
+/* .content>.blog-list>.blog-post>ul>li>div>.question {
     padding: 10px;
     text-align: left;
     text-decoration: none;
     font-size: 25px;
     width: 100%;
-}
+} */
 
+.content>.blog-list>.blog-post>ul>li>div>.question {
+    font-size: 20px;
+    padding: 10px;
+}
 
 .content>button {
     width: 120px;
@@ -152,37 +182,35 @@ body {
     cursor: pointer;
 }
 
-.content>div>.profile-form{
-    display:inline-block;
-    width:100%;
-    height:100%;
-    margin-left:40px;
+.content>div>.profile-form {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    margin-left: 40px;
 }
-.content>div> h2{
+
+.content>div>h2 {
     text-align: center;
-    font-size:30px;
+    font-size: 30px;
 }
 
-.content>div>.profile-form>div{
-    font-size:18px;
-    padding:10px;
-
+.content>div>.profile-form>div {
+    font-size: 18px;
+    padding: 10px;
 }
 
-.content>div>.profile-form>div>input{
+.content>div>.profile-form>div>input {
     margin-top: 20px;
-    margin-left:20px;
+    margin-left: 20px;
     font-size: 18px;
     padding: 5px;
-    border-radius:5px;
+    border-radius: 5px;
 }
-
-
 
 footer {
     display: flex;
     flex-direction: row;
-    background-color:rgb(127, 136, 255);
+    background-color: rgb(127, 136, 255);
 }
 
 footer>h5 {
@@ -198,3 +226,152 @@ button {
     margin: 4px 2px;
     cursor: pointer;
 }
+
+/*****/
+
+* {
+    box-sizing: border-box
+}
+
+/* Add padding to containers */
+
+
+
+
+/* Full-width input fields */
+
+.container-pro {
+    width: 80%;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    overflow-y: scroll;
+}
+
+#profile-form {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 100px;
+}
+form>.propic {
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    width: 100%;
+    margin-top:-80px;
+}
+
+form>.propic>textarea {
+width:71%;
+height:380px;
+border:1px solid green;
+border-style: double;
+border-radius: 5px;
+}
+
+form>.propic>button{
+    width: 70%;
+    height:70px;
+}
+
+/* #title {
+    display: flex;
+    flex-direction: row;
+    flex:12;
+    width: 100%;
+    background-color: #4CAF50;
+} */
+
+
+
+form>.contain {
+    flex: 1;
+    justify-content:flex-start;
+}
+label {
+    margin: 5px 10px 5px 0;
+}
+
+
+.contain>div>.label {
+    margin: 5px 0 15px 0;
+    padding: 10px;
+    background: rgb(160, 162, 165);
+    color: white;
+    display: block;
+    width:150px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.contain>div{
+    display: inline-flex;
+    width:100%;
+}
+
+
+
+input[type=email],
+input[type=text],
+input[type=password] {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 5px 19px 15px 0;
+    border: none;
+    background: #f1f1f1;
+    font-size:15px;
+    width:300px;
+}
+
+input[type=email]:focus,
+input[type=text]:focus,
+input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Overwrite default styles of hr */
+/* 
+form>.propic>hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+    width:60%;
+} */
+
+/* Set a style for the submit/register button */
+
+.registerbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 10%;
+    opacity: 0.9;
+}
+
+.registerbtn:hover {
+    opacity: 1;
+}
+
+/* Add a blue text color to links */
+
+a {
+    color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+
+.signin {
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+.column {
+    float: left;
+    width: 200px;
+    height:200px;
+    padding: 5px;
+}
+        /* <div id="title"><h1>Edit your profile</h1><hr><p>Public information</p></div> */
