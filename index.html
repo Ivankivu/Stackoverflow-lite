@@ -16,8 +16,7 @@
         <form>
             <input type="search" placeholder="Search here...">
         </form>
-        <div class="top-buttons"></div>
-        <button class="btn1">Sign up</button>
+        <div class="top-spacer"></div>
         <button class="btn2" onclick="window.location.href='login.html'">Login</button>
 
     </header>
@@ -34,7 +33,7 @@
         </div>
         <div class="form">
             <h1>Join</h1>
-            <form>
+            <form action="/login.html" method="POST">
                 <div>
                     <label>Display name: </label>
                     <input type="text" id="name" placeholder="e.g. John Doe">
@@ -55,9 +54,9 @@
                 </div>
 
                 <div>
-                    <button id="sign" onclick="window.location.href='login.html'">Sign up</button>
-
+                    <input type="submit" id="sign" value="Signup">
                 </div>
+
             </form>
         </div>
 
