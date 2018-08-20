@@ -106,7 +106,7 @@ class Question(Resource):
             return "{} is deleted.".format(args["question_title"]), 200
 
 
-api.add_resource(Question, "/")
+api.add_resource(Question, "/questions/question", endpoint = "question" )
 
 
 if __name__ == '__main__':
