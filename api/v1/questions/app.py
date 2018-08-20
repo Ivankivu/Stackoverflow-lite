@@ -4,34 +4,7 @@ from flask_restful import Api, Resource, reqparse
 app = Flask(__name__)
 api = Api(app)
 
-questions = [
-    {
-        "question_title": "What is a computer",
-        "question_id": 42,
-        "description": "lorem lorem lorem",
-        "answer": [
-
-            # {
-            #     "answer_id": "What is a computer",  users['answers'].append(3)
-            #     "asn_desc": "kjsadnsafdkjdsfkdsfn"
-            # }
-        ]
-    },
-    {
-
-        "question_title": "What is a computer",
-        "question_id": 15,
-        "description": "lorem lorem lorem lorem lorem lorem",
-        "answer": []
-    },
-    {
-
-        "question_title": "What is a computer",
-        "question_id": 32,
-        "description": "lorem lorem lorem loremlorem lorem loremlorem lorem",
-        "answer": []
-    }
-]
+questions = []
 
 
 class Questions(Resource):
@@ -58,6 +31,7 @@ class Question(Resource):
             parser.add_argument("question_title")
             parser.add_argument("question_id")
             parser.add_argument("description")
+            parser.add_argument("answers")
             args = parser.parse_args()
 
             for question in questions:
@@ -67,12 +41,13 @@ class Question(Resource):
             question = {
                 "question_title": args["question_title"],
                 "question_id": args["question_id"],
-                "description": args["description"]
+                "description": args["description"],
+                "answers": args["answers"]
             }
             questions.append(question)
             return question, 201
 
-        def put(self, method=["((zzzzzPUT"]):
+        def put_question(self, method=["PUT"]):
             parser = reqparse.RequestParser()
             parser.add_argument("question_title")
             parser.add_argument("question_id")
@@ -82,18 +57,39 @@ class Question(Resource):
 
             for question in questions:
                 if(args["question_title"] == question["question_title"]):
-                    question["question_id"] = args["question_id"]
-                    question["description"] = args["description"]
-                    question["answer"] = args["answer"]
+                    question["question_id"] == args["question_id"]
+                    question["description"] == args["description"]
                     return question, 200
 
             question = {
                 "question_title": args["question_title"],
                 "question_id": args["question_id"],
-                "occupation": args["occupation"]
+                "description": args["description"]
             }
             question["answer"].append(question)
             return question, 201
+
+        # def put_answer(self, method=["PUT"]):
+        #     parser = reqparse.RequestParser()
+        #     parser.add_argument("question_title")
+        #     parser.add_argument("answers")
+        #     args = parser.parse_args()
+
+        #     for question in questions:
+        #         if(args["question_title"] == question["question_title"]):
+                   
+        #             for answer in question.answers:
+        #                 answer["answer_id"] = args["answer_id"]
+        #                 answer["asn_desc"] = args["asn_desc"]
+                  
+        #             return question, 200
+
+        #     answer = {
+        #         "answer_id": args["answer_id"],
+        #         "asn_desc": args["asn_desc"]
+        #     }
+        #     question["answer"].append(question)
+        #     return question, 201
 
         def delete(self, method=["DELETE"]):
             parser = reqparse.RequestParser()
