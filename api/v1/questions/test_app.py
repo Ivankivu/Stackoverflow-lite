@@ -3,34 +3,40 @@
 import unittest
 import app 
 from app import questions
-from flask import Flask, request
+from flask import Flask, Request, Response
+from flask_restful import reqparse
 import json
 import sys
-from flask import Request, Response
-from pipenv.vendor import urllib3
+from urllib.request import urlopen
 
 class TestAPI(unittest.TestCase):
     
     def test_home(self):
          self.BaseUrl = 'http://localhost:5000'
+         
   
     def test_posts(self):
-        PostUrl = (self.BaseUrl+"?q=question,questions"+"&"+"APPID=")
+        PostUrl = ("http://localhost:5000/questions")
         print (PostUrl)
-        response = urllib3.urlopen(PostUrl)
-        html=response.read()
-        print(html)
-        self.assertTrue("question" in html)
+        for question in questions:
+            self.assertTrue(args["question_title"] == question["question_title"])
+            return question, 201
+          
+              #  return "Question with Title {} already exists".format(args["question_title"]), 400 
+    #    
     
     def test_post_question(self):
-        pass
+        PostUrl = ("http://localhost:5000/questions/<str>")
+        for question in questions:
+            self.assertTrue(args["question_title"] == question["question_title"])
+            return question, 201
     
     def test_put_question(self):
         #self.assertDictEqual("/questions", True)
-        pass
+        PostUrl = ("http://localhost:5000/questions/<str>")
     
     def test_delete_question(self):
-        pass
+        PostUrl = ("http://localhost:5000/questions/<str>")
     
     
     
