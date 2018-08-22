@@ -9,9 +9,9 @@ import sys
 
 class TestAPI(unittest.TestCase):
         
-#     def test_home(self):
-#         response = self.app.get("/")
-#         self.assertEquals(response.code, 200)
+    def test_home(self):
+        response = self.app.get("/")
+        self.assertEquals(response.code, 200)
         
   
     def test_posts(self):
