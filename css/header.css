@@ -53,6 +53,7 @@ header>.dropdown {
     justify-content: flex-end;
     margin: 10px 20px 0 0;
     background-image:url("/img/top-avatar.png");
+    background-color:#111111;
     background-repeat: no-repeat;
     min-width: 50px;
     max-height: 50px;
