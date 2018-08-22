@@ -2,6 +2,7 @@ language: python
 python:
   -"3.5"
   -"3.6"
-cache:pip
+
+cache: pip
 install: "pip install -r requirements.txt"
-script: python /api/v1/questions/app.py
+script: python /api/v1/questions/test_app.py
