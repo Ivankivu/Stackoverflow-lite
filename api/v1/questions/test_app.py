@@ -2,6 +2,7 @@
 
 import unittest
 import app 
+from app import questions
 from flask import Flask
 import json
 import sys
@@ -14,7 +15,8 @@ class TestAPI(unittest.TestCase):
         
   
     def test_posts(self):
-       pass
+
+        self.assertDictEqual("question", True)
     
     def test_post_question(self):
         pass
