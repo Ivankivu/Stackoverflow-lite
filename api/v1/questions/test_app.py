@@ -34,6 +34,9 @@ class TestAPI(unittest.TestCase):
     def test_put_question(self):
         #self.assertDictEqual("/questions", True)
         PostUrl = ("http://localhost:5000/questions/<str>")
+        for question in questions:
+            self.assertTrue(args["question_title"] == question["question_title"])
+            return question, 201
     
     def test_delete_question(self):
         PostUrl = ("http://localhost:5000/questions/<str>")
