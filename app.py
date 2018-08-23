@@ -1,6 +1,5 @@
-from flask import Flask, Request, Response
-import flask_restful, reqparse
-
+from flask import Flask, Request, jsonify, request, Response, json, reqparse
+from flask_restful import reqparse
 app = Flask(__name__)
 api = flask_restful.Api(app)
 
@@ -28,25 +27,28 @@ api.add_resource(getQuestions, "/questions", endpoint='getQuestions')
 
 class postQuestion(flask_restful.Resource):
     def post(self, methods=["POST"]):
-        parser = reqparse.RequestParser()
-        parser.add_argument("question_title")
-        parser.add_argument("question_id")
-        parser.add_argument("description")
-        parser.add_argument("answers")
-        args = parser.parse_args()
+        request_data  = request.get_json()
+    if (valid_question(request_data)):
         question = {
-                        "question_title": args["question_title"],
-                        "question_id": args["question_id"],
-                        "description": args["description"],
-                        "answers": args["answers"]
-                    }
-        for question in questions:
-            if(args["question_title"] == question["question_title"]):
-                return "Question with Title {} already exists".format(args["question_title"]), 400
+                        "question_title": request_data["question_title"],
+                        "question_id": request_data["question_id"],
+                        "description": request_data["description"],
+                        "answers": request_data["answers"]
+        }
         questions.append(question)
-        return question, 201
+        response = Response("", 201, mimetype="application/json")
+        response.headers['Location'] = "questions/" + str(request_data['question_title'])
+        return response
+    else:
+         bad_object = {
+        "error": "Invalid book object",
+        "help_string":
+        "Request format should be {'question': 'What is science',"
+        "'question_id': '2','question_id': 1212 }"
+        }
+        response = Response(json.dumps(bad_object), status=400, mimetype="appliation/json")
+        return response
 api.add_resource(postQuestion, "/questions", endpoint='postQuestions')
-
 
 class putQuestion(flask_restful.Resource):
     def put_question(self, methods=["PUT"]):
