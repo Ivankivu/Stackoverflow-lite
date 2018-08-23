@@ -1,8 +1,8 @@
 ## Stackoverflow-lite
 
-| -------------   |-------------|----------|
+| Features   |Requirements|Dependencies|
 
-|Travis CI status | [![Build Status](https://travis-ci.org/Ivankivu/Stackoverflow-lite.svg?branch=master)]
+|Travis CI status | [![Build Status](https://travis-ci.org/Ivankivu/Stackoverflow-lite.svg?branch=travis)]
 ## Features
 -----------
 Here..
