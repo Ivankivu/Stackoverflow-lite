@@ -2,7 +2,7 @@
 
 | -------------   |-------------|----------|
 
-|Travis CI status | [![Build Status](https://travis-ci.org/Ivankivu/Stackoverflow-lite.svg?branch=travis)]
+|Travis CI status | [![Build Status](https://travis-ci.org/Ivankivu/Stackoverflow-lite.svg?branch=travis)]https://travis-ci.org/{{Ivankivu}}/{{Stackoverflow-lite}}]
 ## Features
 -----------
 Here..
