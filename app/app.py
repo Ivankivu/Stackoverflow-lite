@@ -1,7 +1,6 @@
-from venv import Flask
 from venv import flask_restful, reqparse
 
-app = Flask(__name__)
+app = flask_restful(__name__)
 api = flask_restful.Api(app)
 
 questions = []

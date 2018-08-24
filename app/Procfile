@@ -1,1 +1,1 @@
-web: gnicorn run:app
+web: gnicorn app:app
