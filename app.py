@@ -1,12 +1,10 @@
-from venv import flask_restful, reqparse
+from flask import Flask, jsonify
+from flask_restful import Api, Resource, reqparse
 
-app = flask_restful(__name__)
-api = flask_restful.Api(app)
+app = Flask(__name__)
+api = Api(app)
 
 questions = []
-
-
-
 
 
 @app.route('/', methods=['GET'])
