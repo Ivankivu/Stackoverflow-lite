@@ -1,37 +1,54 @@
-## Welcome to GitHub Pages
+## Stackoverflow-lite
 
-You can use the [editor on GitHub](https://github.com/Ivankivu/Stackoverflow-lite/edit/gh-pages/README.md) to maintain and preview the content for your website in Markdown files.
+| -------------   |-------------|----------|
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+|Travis CI status | [![Build Status](https://travis-ci.org/Ivankivu/Stackoverflow-lite.svg?branch=master)]
+## Features
+-----------
+Here..
+Users can signup and create an account
+Users Can log in.
+Users can post questions.
+Users can view the answers to questions.
+Users can vote best answers
+Users can delete their questions they post.
+Users can post answers.
+Users can search for questions.
+UI template was developed using basic HTML5, CSS3, vanilla javascript and free downloaded images
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
+## Requirements
+---------------
+For proper running of this application, make sure you have the following.
+local server(localhost)
+native python wether on a virtual enviroment or global installation
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
+## Install Dependencies
+While still in the terminal run npm install or yarn depending on which package manager you have installed .
 
-1. Numbered
-2. List
+## Stackoverflow-lite_api
+--------------------------
 
-**Bold** and _Italic_ and `Code` text
+This api consists of four endpoints POST,GET, PUT, DELETE. Each of these endpoints serves a purpose in the proper backend function of the Stackoverflow-lite app.
 
-[Link](url) and ![Image](src)
-```
+## POST
+-------
+-One can post a single question to the platform
+_One can post an answer to a question they know or have an ideea about
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+## GET
+------
+-One can fetch a single question of choice if they do know that question title
+-One can fetch mutliple questions to be displayed
 
-### Jekyll Themes
+## PUT
+------
+-This mimics update endpoint but it actually deletes the old information replacing it with the new
+-one can do make changes with is endpoint
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Ivankivu/Stackoverflow-lite/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+## DELETE
+---------
+-Here one can delete or remove a question or answer they do not like.
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
